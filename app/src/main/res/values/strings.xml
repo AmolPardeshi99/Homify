@@ -5,4 +5,11 @@
     <string name="intro_one">It will Provide you Daily work opportunities to grow Financially</string>
     <string name="intro_two">Will Provide Training support to improve working skills.</string>
     <string name="intro_three">Get any help from the Co-workers and Engineer Leads at work Location.</string>
+    <string name="lang_str">For better experience choose comfortable language</string>
+    <string-array name="languages">
+        <item>Choose language</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Tamil</item>
+    </string-array>
 </resources>

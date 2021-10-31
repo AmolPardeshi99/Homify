@@ -16,6 +16,7 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:layout_marginVertical="10dp"
             android:fontFamily="@font/open_sans"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,6 +24,7 @@
             android:textColor="@color/primary_color"
             android:textSize="24sp" />
         <TextView
+            android:layout_marginVertical="10dp"
             android:gravity="center"
             android:textSize="14sp"
             android:textColor="@color/black"

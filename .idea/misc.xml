@@ -7,11 +7,16 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/seleted_dot.xml" value="0.26875" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/tab_selector.xml" value="0.26461538461538464" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_intro.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_login.xml" value="0.12284701114488349" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_splash_screen.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/bottomsheet_register.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_intro_frag_one.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_intro_frag_three.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_intro_frag_two.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_language.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_register.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/lang_dialog.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/selected_dot.xml" value="0.2526041666666667" />
       </map>
     </option>
