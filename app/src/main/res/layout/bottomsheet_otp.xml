@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:padding="20dp"
         android:orientation="vertical"
@@ -71,6 +72,31 @@
                 android:maxLength="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="6dp">
+
+                <Button
+                    android:id="@+id/continueGoogleRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verify OTP"
+                    android:background="@color/primary_color"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
 
