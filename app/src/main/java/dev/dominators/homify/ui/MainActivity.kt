@@ -1,7 +1,8 @@
-package dev.dominators.homify
+package dev.dominators.homify.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dev.dominators.homify.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
