@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homify">
         <activity
+            android:name="dev.dominators.homify.ui.Introduction.IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.splash_screen.SplashScreenActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
