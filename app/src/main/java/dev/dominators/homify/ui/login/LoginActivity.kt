@@ -14,10 +14,10 @@ class LoginActivity : AppCompatActivity() {
         dataBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(dataBinding.root)
 
-        val languageFrag = LanguageFrag()
-        val fragmentManager = supportFragmentManager.beginTransaction()
-        fragmentManager.replace(dataBinding.containerFragmentLogin.id, languageFrag, "languageFragment")
-            .commit()
+//        val languageFrag = LanguageFrag()
+//        val fragmentManager = supportFragmentManager.beginTransaction()
+//        fragmentManager.replace(dataBinding.containerFragmentLogin.id, languageFrag, "languageFragment")
+//            .commit()
 
     }
 }

@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homify">
         <activity
-            android:windowSoftInputMode="adjustResize"
-            android:name=".ui.login.LoginActivity"
+            android:name=".ui.login.OTPActivity"
             android:exported="true" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.Introduction.IntroActivity"
             android:exported="true">

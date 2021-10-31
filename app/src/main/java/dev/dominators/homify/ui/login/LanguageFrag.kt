@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentLanguageBinding
@@ -27,8 +28,7 @@ class LanguageFrag : Fragment(R.layout.fragment_language) {
         var view1 = layoutInflater.inflate(R.layout.lang_dialog,null)
         langBinding= LangDialogBinding.bind(view1)
         langBinding.nextToRegister.setOnClickListener {
-            val intent = Intent(requireContext(),RegisterFrag::class.java)
-            startActivity(intent)
+            Navigation.findNavController(view).navigate(R.id.action_languageFrag_to_registerFrag)
         }
         dialog.setContentView(view1)
         dialog.setCancelable(false)
