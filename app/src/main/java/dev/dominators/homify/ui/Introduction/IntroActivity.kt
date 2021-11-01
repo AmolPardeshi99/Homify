@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.ActivityIntroBinding
-import dev.dominators.homify.ui.MainActivity
 import dev.dominators.homify.ui.login.LoginActivity
 
 class IntroActivity : AppCompatActivity() {

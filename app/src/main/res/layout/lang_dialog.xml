@@ -37,7 +37,7 @@
             android:id="@+id/nextToRegister"
             android:textColor="@color/white"
             android:text="next"
-            android:background="@color/primary_color"
+            android:background="@color/primary_colour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

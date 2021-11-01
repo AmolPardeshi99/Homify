@@ -55,7 +55,7 @@
                         android:id="@+id/verifyOtpRegister"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/primary_color"
+                        android:background="@color/primary_colour"
                         android:paddingVertical="20dp"
                         android:text="verify otp"
                         android:textColor="@color/white" />
