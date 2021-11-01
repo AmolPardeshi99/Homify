@@ -1,104 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
-        android:padding="20dp"
-        android:orientation="vertical"
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TextView
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:text="Enter OTP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:text=" Which has sent to your Mobile Number 9845821544"
-            android:layout_width="259dp"
-            android:layout_height="wrap_content"/>
-
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/et1"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/et2"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/et3"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/et4"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/et5"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <EditText
-                android:id="@+id/et6"
-                android:textSize="24sp"
-                android:inputType="number"
-                android:maxLength="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:gravity="bottom"
+            android:padding="20dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                app:cardCornerRadius="6dp">
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:text="Enter OTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-                <Button
-                    android:id="@+id/continueGoogleRegister"
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text=" Which has sent to your Mobile Number 9845821544"
+                android:layout_width="259dp"
+                android:layout_marginBottom="147dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginBottom="131dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et2"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et3"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et4"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et5"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/et6"
+                    android:textSize="24sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Verify OTP"
-                    android:background="@color/primary_color"
-                    android:textColor="@color/white" />
+                    app:cardCornerRadius="6dp">
 
-            </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/continueGoogleRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Verify OTP"
+                        android:background="@color/primary_color"
+                        android:textColor="@color/white" />
 
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 </layout>

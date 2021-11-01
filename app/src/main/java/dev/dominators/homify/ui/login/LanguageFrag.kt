@@ -27,13 +27,15 @@ class LanguageFrag : Fragment(R.layout.fragment_language) {
 
         var view1 = layoutInflater.inflate(R.layout.lang_dialog,null)
         langBinding= LangDialogBinding.bind(view1)
-        langBinding.nextToRegister.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_languageFrag_to_registerFrag)
-        }
+
         dialog.setContentView(view1)
         dialog.setCancelable(false)
         dialog.show()
 
+        langBinding.nextToRegister.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_languageFrag_to_registerFrag)
+            dialog.dismiss()
+        }
 
     }
 
