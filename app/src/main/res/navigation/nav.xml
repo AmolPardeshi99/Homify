@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/languageFrag">
+
+    <fragment
+        android:id="@+id/languageFrag"
+        android:name="dev.dominators.homify.ui.login.LanguageFrag"
+        android:label="LanguageFrag" >
+        <action
+            android:id="@+id/action_languageFrag_to_registerFrag"
+            app:destination="@id/registerFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFrag"
+        android:name="dev.dominators.homify.ui.login.RegisterFrag"
+        android:label="RegisterFrag" />
+</navigation>

@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homify">
         <activity
+            android:name=".ui.login.OTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.Introduction.IntroActivity"
             android:name=".ui.homepage.HomeActivity"
             android:exported="true">
             <intent-filter>
@@ -18,6 +26,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.splash_screen.SplashScreenActivity"
+            android:exported="true"></activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
