@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.BottomsheetOtpBinding
@@ -41,8 +42,8 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
         }
 
         otpBinding.continueGoogleRegister.setOnClickListener {
-            val intent = Intent(context, HomeActivity::class.java)
-            startActivity(intent)
+            Navigation.findNavController(view).navigate(R.id.action_registerFrag_to_redirectFrag)
+            otDdialog.dismiss()
         }
 
     }
