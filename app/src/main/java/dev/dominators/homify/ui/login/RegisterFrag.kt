@@ -1,5 +1,6 @@
 package dev.dominators.homify.ui.login
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import dev.dominators.homify.R
 import dev.dominators.homify.databinding.BottomsheetOtpBinding
 import dev.dominators.homify.databinding.BottomsheetRegisterBinding
 import dev.dominators.homify.databinding.FragmentRegisterBinding
+import dev.dominators.homify.ui.homepage.HomeActivity
 
 class RegisterFrag : Fragment(R.layout.fragment_register) {
 
@@ -38,7 +40,10 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
             otDdialog.show()
         }
 
-
+        otpBinding.continueGoogleRegister.setOnClickListener {
+            val intent = Intent(context, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

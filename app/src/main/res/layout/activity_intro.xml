@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/primary_color"
+                android:background="@color/primary_colour"
                 android:paddingHorizontal="35dp"
                 android:paddingVertical="14dp"
                 android:text="skip"

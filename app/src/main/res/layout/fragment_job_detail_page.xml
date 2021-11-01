@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="jobDataModel"
+            type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.homepage.JobDetailPage">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tvToolBarJobDetail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/supporting_colour1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#0000ffff"
+                    android:src="@drawable/ic_cross_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Job Id:2542842"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#0000ffff"
+                    android:src="@drawable/ic_question_icon" />
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/jobCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvToolBarJobDetail">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvCustomerNameJI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:text="Santosh J"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvJobStarted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/supporting_colour2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Job Started"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCustomerNameJI" />
+
+                <TextView
+                    android:id="@+id/tvCustomerLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Customer Location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvJobStarted" />
+
+                <TextView
+                    android:id="@+id/tvCustomerAdd"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="textMultiLine"
+                    android:text="@{jobDataModel.customerAdd}"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCustomerLocation" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="29dp"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="add"
+                    android:drawableStart="@drawable/ic_location_icon"
+                    android:padding="5dp"
+                    android:text="See On MAP"
+                    android:textColor="@color/black"
+                    app:icon="@drawable/ic_location_icon"
+                    app:layout_constraintEnd_toStartOf="@+id/materialButton"
+                    app:layout_constraintHorizontal_bias="0.619"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCustomerAdd"
+                    app:strokeWidth="1dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/materialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="48dp"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="add"
+                    android:drawableStart="@drawable/ic_location_icon"
+                    android:text="Call Customer"
+                    android:textColor="@color/black"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvCustomerAdd"
+                    app:strokeWidth="1dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="@color/black"
+            android:text="Alternate Solution"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/jobCard"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContactLead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="172dp"
+            android:backgroundTint="@color/supporting_colour2"
+            android:backgroundTintMode="add"
+            android:padding="5dp"
+            android:text="Contact Lead"
+            app:cornerRadius="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Contact customer service only related to above mentioned and other type of issues."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnContactLead" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

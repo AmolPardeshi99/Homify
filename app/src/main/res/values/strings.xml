@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Homify</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="intro_one">It will Provide you Daily work opportunities to grow Financially</string>
     <string name="intro_two">Will Provide Training support to improve working skills.</string>
