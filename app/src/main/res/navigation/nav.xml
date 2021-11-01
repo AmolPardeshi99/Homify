@@ -15,5 +15,21 @@
     <fragment
         android:id="@+id/registerFrag"
         android:name="dev.dominators.homify.ui.login.RegisterFrag"
-        android:label="RegisterFrag" />
+        android:label="RegisterFrag" >
+        <action
+            android:id="@+id/action_registerFrag_to_redirectFrag"
+            app:destination="@id/redirectFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/redirectFrag"
+        android:name="dev.dominators.homify.ui.login.RedirectFrag"
+        android:label="RedirectFrag" >
+        <action
+            android:id="@+id/action_redirectFrag_to_detailsFrag"
+            app:destination="@id/detailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFrag"
+        android:name="dev.dominators.homify.ui.login.DetailsFrag"
+        android:label="DetailsFrag" />
 </navigation>
