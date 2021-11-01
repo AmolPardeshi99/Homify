@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="jobDataModel"
             type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />
@@ -10,107 +11,100 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        app:cardCornerRadius="10dp"
+        android:layout_height="165dp"
         android:layout_margin="10dp"
-        app:cardElevation="10dp"
-        android:layout_height="165dp">
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            >
+            android:layout_marginBottom="10dp">
 
             <View
                 android:id="@+id/view_skyblue"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:background="@color/faint_skyblue"
-                android:layout_height="40dp"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Ceiling Work"
                 android:textSize="18sp"
-                android:layout_marginStart="10dp"
-                app:layout_constraintTop_toTopOf="@id/view_skyblue"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="@id/view_skyblue" />
 
             <TextView
                 android:id="@+id/tvCreated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
                 android:text="Created at"
                 android:textSize="18sp"
-                android:layout_marginEnd="5dp"
-                app:layout_constraintTop_toTopOf="@id/view_skyblue"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintEnd_toStartOf="@id/tvNewJobCreatedTime"
-                />
+                app:layout_constraintTop_toTopOf="@id/view_skyblue" />
 
             <TextView
                 android:id="@+id/tvNewJobCreatedTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
                 android:text="@{jobDataModel.createdTime}"
                 android:textSize="18sp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toTopOf="@id/view_skyblue"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="@id/view_skyblue" />
 
             <TextView
                 android:id="@+id/tvCustomerName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="@{jobDataModel.customerName}"
                 android:textSize="18sp"
-                android:layout_marginEnd="10dp"
-                android:layout_margin="10dp"
-                app:layout_constraintTop_toBottomOf="@id/view_skyblue"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@id/view_skyblue" />
 
             <TextView
                 android:id="@+id/tvCustomerAdd"
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
                 android:inputType="textMultiLine"
                 android:text="@{jobDataModel.customerAdd}"
                 android:textSize="18sp"
-                android:layout_marginEnd="10dp"
-                android:layout_margin="10dp"
-                app:layout_constraintTop_toBottomOf="@id/tvCustomerName"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@id/tvCustomerName" />
 
             <TextView
                 android:id="@+id/tvnewJobTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="@{jobDataModel.newJobTime}"
                 android:textSize="18sp"
-                android:layout_marginEnd="10dp"
-                android:layout_margin="10dp"
-                app:layout_constraintTop_toBottomOf="@id/view_skyblue"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@id/view_skyblue" />
+
             <TextView
                 android:id="@+id/tvnewJobDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="@{jobDataModel.newJobDate}"
                 android:textSize="18sp"
-                android:layout_marginEnd="10dp"
-                android:layout_margin="10dp"
-                app:layout_constraintTop_toBottomOf="@id/tvnewJobTime"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@id/tvnewJobTime" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -9,33 +9,28 @@ import dev.dominators.homify.R
 import dev.dominators.homify.databinding.NewworkItemLayoutBinding
 
 
-class NewJobAdapter : RecyclerView.Adapter<NewJobAdapter.NewJobViewHolder>() {
-    private val jobList  = arrayListOf<NewJobData>()
+class NewJobAdapter(
+    private val newJobDataList:List<NewJobData>
+) : RecyclerView.Adapter<NewJobAdapter.NewJobViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewJobViewHolder {
-       return NewJobViewHolder(DataBindingUtil.inflate(LayoutInflater.from(parent.context),R.layout.newwork_item_layout,parent,false))
+       return NewJobViewHolder(DataBindingUtil.inflate(LayoutInflater.from(parent.context),
+           R.layout.newwork_item_layout,parent,false))
     }
 
     override fun onBindViewHolder(holder: NewJobViewHolder, position: Int) {
-        val newJobData = jobList[position]
+        val newJobData = newJobDataList[position]
         holder.setData(newJobData)
-
     }
 
     override fun getItemCount(): Int {
-        return jobList.size
+        return newJobDataList.size
     }
 
-    fun updateData(newJobDataList:List<NewJobData>){
-        val diffUtilCallBack = NewJobDiffUtilCallBack(jobList,newJobDataList)
-        val diffResult = DiffUtil.calculateDiff(diffUtilCallBack)
-        jobList.clear()
-        jobList.addAll(newJobDataList)
-        diffResult.dispatchUpdatesTo(this)
-    }
 
-    class NewJobViewHolder(private val itemview: NewworkItemLayoutBinding) :
+    class NewJobViewHolder(private val itemview : NewworkItemLayoutBinding) :
         RecyclerView.ViewHolder(itemview.root) {
+
         fun setData(newJobData: NewJobData) {
             itemview.jobDataModel = newJobData
         }
@@ -43,3 +38,13 @@ class NewJobAdapter : RecyclerView.Adapter<NewJobAdapter.NewJobViewHolder>() {
 
 
 }
+
+//
+//
+//fun updateData(newJobDataList:List<NewJobData>){
+//    val diffUtilCallBack = NewJobDiffUtilCallBack(jobList,newJobDataList)
+//    val diffResult = DiffUtil.calculateDiff(diffUtilCallBack)
+//    jobList.clear()
+//    jobList.addAll(newJobDataList)
+//    diffResult.dispatchUpdatesTo(this)
+//}

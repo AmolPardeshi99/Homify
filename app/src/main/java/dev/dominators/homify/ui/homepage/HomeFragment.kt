@@ -8,46 +8,39 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import dev.dominators.homify.R
-import dev.dominators.homify.databinding.ActivityMainBinding
 import dev.dominators.homify.databinding.FragmentHomeBinding
 import dev.dominators.homify.ui.homepage.diffutil.NewJobAdapter
 import dev.dominators.homify.ui.homepage.diffutil.NewJobData
 
-class HomeFragment : Fragment(R.layout.fragment_home) {
+class HomeFragment : Fragment() {
 
     lateinit var fragmentHomeBinding: FragmentHomeBinding
     var newJobList = arrayListOf<NewJobData>()
+    lateinit var newJobAdapter: NewJobAdapter
 
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        fragmentHomeBinding = FragmentHomeBinding.inflate(layoutInflater)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        fragmentHomeBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
+        val view = fragmentHomeBinding.root
+        val recyclerView = fragmentHomeBinding.newJobRecycler
+        recyclerView.layoutManager = LinearLayoutManager(context)
         buildData()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        setAdaptor()
-    }
-
-    private fun setAdaptor() {
-        val linearLayoutManager = LinearLayoutManager(context)
-        val newJobAdapter = NewJobAdapter()
-        fragmentHomeBinding.newJobRecycler.apply {
-            adapter = newJobAdapter
-            layoutManager = linearLayoutManager
-            newJobAdapter.updateData(newJobList)
-        }
-
+        newJobAdapter = NewJobAdapter(newJobList)
+        recyclerView.adapter = newJobAdapter
+        return view
     }
 
     private fun buildData() {
         for (i in 1..3){
-            val newJobData = NewJobData("10:00 PM","Ranjan${i}",
+            val newJobData = NewJobData("10:00 PM","Ranjan${1}",
                 "Plot No.61, JP Colony, Jalgaon, Maharashtra, India","9:00 PM",
                 "12 Dec 2021",1234567800,"I want best service",
                 1200.0000f,0.0000f,0.0000f)
             newJobList.add(newJobData)
+
         }
     }
 
