@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:fitsSystemWindows="true">
 
     <androidx.cardview.widget.CardView
@@ -32,6 +33,7 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/etMobileNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"
@@ -51,12 +53,12 @@
                     android:layout_marginTop="132dp"
                     app:cardCornerRadius="6dp">
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/verifyOtpRegister"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="60dp"
                         android:background="@color/primary_colour"
-                        android:paddingVertical="20dp"
+                        android:paddingVertical="10dp"
                         android:text="verify otp"
                         android:textColor="@color/white" />
 
@@ -68,11 +70,12 @@
                     android:layout_marginTop="32dp"
                     app:cardCornerRadius="6dp">
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/continueGoogleRegister"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/google"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/grey"
+                        android:drawableLeft="@drawable/google"
                         android:text="Continue with google"
                         android:textColor="@color/black" />
 

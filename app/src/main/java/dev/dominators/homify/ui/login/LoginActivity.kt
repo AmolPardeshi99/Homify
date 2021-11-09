@@ -10,14 +10,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         dataBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(dataBinding.root)
-
-//        val languageFrag = LanguageFrag()
-//        val fragmentManager = supportFragmentManager.beginTransaction()
-//        fragmentManager.replace(dataBinding.containerFragmentLogin.id, languageFrag, "languageFragment")
-//            .commit()
 
     }
 }
