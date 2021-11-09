@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/job_nav"
+    app:startDestination="@id/jobDescription">
+
+    <fragment
+        android:id="@+id/jobDescription"
+        android:name="dev.dominators.homify.ui.JobCheck.JobDescription"
+        android:label="JobDescription" >
+        <action
+            android:id="@+id/action_jobDescription_to_jobDetailPage"
+            app:destination="@id/jobDetailPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailPage"
+        android:name="dev.dominators.homify.ui.JobCheck.JobDetailPage"
+        android:label="JobDetailPage" />
+</navigation>

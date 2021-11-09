@@ -17,6 +17,8 @@ import dev.dominators.homify.ui.homepage.HomeActivity
 class RegisterFrag : Fragment(R.layout.fragment_register) {
 
     private lateinit var dataBinding:FragmentRegisterBinding
+    private lateinit var registerBinding:BottomsheetRegisterBinding
+    private lateinit var otpBinding:BottomsheetOtpBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -24,7 +26,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
 
         val numberDialog = BottomSheetDialog(requireContext())
         val view1 = layoutInflater.inflate(R.layout.bottomsheet_register,null)
-        val registerBinding = BottomsheetRegisterBinding.bind(view1)
+        registerBinding = BottomsheetRegisterBinding.bind(view1)
 
 
         numberDialog.setContentView(view1)
@@ -32,7 +34,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
 
         val otDdialog = BottomSheetDialog(requireContext())
         val view2 = layoutInflater.inflate(R.layout.bottomsheet_otp,null)
-        val otpBinding = BottomsheetOtpBinding.bind(view2)
+        otpBinding = BottomsheetOtpBinding.bind(view2)
 
         otDdialog.setContentView(view2)
 

@@ -1,4 +1,4 @@
-package dev.dominators.homify.ui.homepage
+package dev.dominators.homify.ui.JobCheck
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

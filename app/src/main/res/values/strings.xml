@@ -5,6 +5,12 @@
     <string name="intro_two">Will Provide Training support to improve working skills.</string>
     <string name="intro_three">Get any help from the Co-workers and Engineer Leads at work Location.</string>
     <string name="lang_str">For better experience choose comfortable language</string>
+    <string name="job_address">G92-419/1, Pragathi Nagar,\n kutkatpally, Hydrabad, Telangana.\n500009, India.</string>
+    <string name="customer_reqruirements">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse iaculis dui sed dolor iaculis, sed lobortis.Crassuscipit ligula in felis volutpat efficitur.
+        Morbi sed diam vel purus gravida porttitor a ut nisl.In at justo quis felis laoreet volutpat.
+        Maecenas et nisi id nisi ultrices facilisis</string>
+    <string name="dialog_notice">Make sure that before starting the work, The customer had to pay 70% of the booking amount.</string>
     <string-array name="languages">
         <item>Choose language</item>
         <item>English</item>
