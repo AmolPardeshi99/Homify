@@ -11,6 +11,8 @@
         Morbi sed diam vel purus gravida porttitor a ut nisl.In at justo quis felis laoreet volutpat.
         Maecenas et nisi id nisi ultrices facilisis</string>
     <string name="dialog_notice">Make sure that before starting the work, The customer had to pay 70% of the booking amount.</string>
+    <string name="on_present_job">On Present Job</string>
+    <string name="presentjob_desc">To improve working skills effectively</string>
     <string-array name="languages">
         <item>Choose language</item>
         <item>English</item>
