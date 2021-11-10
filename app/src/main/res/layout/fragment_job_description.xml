@@ -263,11 +263,11 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/acceptJob"
-                    android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="accept job" />
+                    android:text="accept job"
+                    android:visibility="visible" />
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/alternateSolution"
                     android:visibility="gone"

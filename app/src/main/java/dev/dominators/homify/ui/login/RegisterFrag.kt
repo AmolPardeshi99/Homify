@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.*
+import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import dev.dominators.homify.R
@@ -108,6 +109,8 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 super.onCodeSent(p0, p1)
                 verificationCode = p0
 
+                Toast.makeText(requireContext(),"code sent",Toast.LENGTH_SHORT)
+
             }
 
             override fun onVerificationCompleted(p0: PhoneAuthCredential) {
@@ -115,6 +118,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 if (code != null) {
                     verifyCode(code)
                 }
+                Toast.makeText(requireContext(),"code sent",Toast.LENGTH_SHORT)
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {
