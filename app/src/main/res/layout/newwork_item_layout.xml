@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
             name="jobDataModel"
             type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />

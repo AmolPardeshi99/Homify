@@ -39,6 +39,9 @@ class NewJobAdapter(
 
 }
 
+
+
+
 //
 //
 //fun updateData(newJobDataList:List<NewJobData>){

@@ -1,4 +1,4 @@
-package dev.dominators.homify.ui.homepage
+package dev.dominators.homify.ui.ongoing
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,16 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import dev.dominators.homify.R
 
-class OngoingFragment : Fragment(R.layout.fragment_ongoing) {
+class WeekFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_week, container, false)
     }
-
 
 
 }
