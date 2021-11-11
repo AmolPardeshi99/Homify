@@ -26,8 +26,7 @@ class HomeActivity : AppCompatActivity() {
             var temp: Fragment? = null
             when (item.itemId) {
                 R.id.menu_home -> temp = HomeFragment()
-                R.id.menu_training -> temp = TrainingTabLayout()
-//                R.id.menu_training -> temp = TrainingFragment()
+                R.id.menu_training -> temp = TrainingFragment()
                 R.id.menu_ongoing -> temp = OngoingFragment()
                 R.id.menu_money -> temp = MoneyFragment()
             }
@@ -39,3 +38,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 }
+
+
+
+//R.id.menu_training -> temp = TrainingTabLayout()
