@@ -6,35 +6,46 @@
     <group android:checkableBehavior="single">
 
         <item
+            android:icon="@drawable/ic_d_profile"
             android:id="@+id/nav_your_bookings"
             android:title="My Profile" />
 
         <item
+            android:icon="@drawable/ic_d_com_jobs"
             android:id="@+id/nav_payment"
             android:title="Completed Jobs" />
 
         <item
+            android:icon="@drawable/ic_d_sal_d"
             android:id="@+id/nav_coupons"
             android:title="My Salary details" />
 
         <item
+            android:icon="@drawable/ic_d_cust_rate"
             android:id="@+id/nav_settings"
             android:title="Customer Ratings" />
 
         <item
+            android:icon="@drawable/worker_img"
             android:id="@+id/nav_help"
             android:title="Helpers/Co-workers" />
         <item
+            android:icon="@drawable/ic_d_incentive"
             android:id="@+id/nav_about"
             android:title="Incentives" />
 
-        <item android:id="@+id/helo_support"
+        <item
+            android:icon="@drawable/customer_img"
+            android:id="@+id/helo_support"
             android:title="Help &amp; Support"/>
 
-        <item android:id="@+id/training_completed"
+        <item
+            android:icon="@drawable/ic_d_com_train"
+            android:id="@+id/training_completed"
             android:title="Completed Training"/>
 
         <item
+            android:icon="@drawable/ic_d_logout"
             android:id="@+id/nav_logout"
             android:title="Logout" />
 

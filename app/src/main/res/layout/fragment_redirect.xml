@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <RelativeLayout
+        android:background="@color/primary_colour"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -9,27 +10,30 @@
 
         <ImageView
             android:id="@+id/redirectImage"
-            android:src="@drawable/redirect"
+            android:src="@drawable/ic_redirectimage"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <TextView
-            android:layout_marginTop="20dp"
-            android:gravity="center"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/redirectImage"
             android:layout_centerHorizontal="true"
-            android:text="Your Mobile number is verified  successfully."
-            android:layout_width="259dp"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Your Mobile number is verified  successfully." />
 
         <TextView
             android:id="@+id/redirectNumber"
+            android:layout_width="202dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginVertical="100dp"
-            android:layout_alignParentBottom="true"
-            android:text="Automatically redirected to next page in "
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"/>
+            android:text="Automatically redirected to next page in " />
 
 
     </RelativeLayout>

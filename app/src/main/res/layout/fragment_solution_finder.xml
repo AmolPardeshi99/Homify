@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="15dp"
-                        android:src="@drawable/video_support" />
+                        android:src="@drawable/ic_video_img1" />
 
                     <TextView
                         android:id="@+id/videoSupportText"
@@ -106,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="15dp"
-                        android:src="@drawable/worker_img" />
+                        android:src="@drawable/ic_worker_img" />
 
                     <TextView
                         android:id="@+id/workerSupportText"
@@ -141,16 +141,16 @@
 
             <RelativeLayout
                 android:id="@+id/workerMakeCall"
-                android:visibility="gone"
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:visibility="gone">
 
                 <TextView
-                    android:textColor="@color/black"
-                    android:text="@string/worker_support_open"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:text="@string/worker_support_open"
+                    android:textColor="@color/black" />
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
@@ -160,6 +160,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginBottom="70dp"
+                    android:backgroundTint="@color/supporting_colour1"
                     android:text="make a call" />
 
             </RelativeLayout>
@@ -180,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="15dp"
-                        android:src="@drawable/customer_img" />
+                        android:src="@drawable/ic_cust_img" />
 
                     <TextView
                         android:id="@+id/customerSupportText"
@@ -210,12 +211,13 @@
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
             <RelativeLayout
                 android:id="@+id/customerMakeCall"
-                android:visibility="gone"
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:visibility="gone">
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
@@ -225,6 +227,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginBottom="70dp"
+                    android:backgroundTint="@color/supporting_colour1"
                     android:text="make a call" />
 
             </RelativeLayout>

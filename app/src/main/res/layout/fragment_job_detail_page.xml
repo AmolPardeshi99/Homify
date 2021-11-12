@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="jobDataModel"
             type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />
@@ -12,13 +13,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.JobCheck.JobDetailPage">
+        tools:context=".ui.homepage.JobDetailPage">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tvToolBarJobDetail"
             android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:background="@color/primary_colour"
-            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -84,10 +85,10 @@
                     android:id="@+id/tvJobTimeJI"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="28dp"
                     android:text="@{jobDataModel.newJobTime}"
                     android:textSize="15sp"
-                    android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,15 +96,13 @@
                     android:id="@+id/tvJobDateJI"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="10dp"
                     android:text="@{jobDataModel.newJobDate}"
                     android:textSize="15sp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="20dp"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@id/tvJobStarted"
-                     />
-
+                    app:layout_constraintEnd_toEndOf="parent" />
 
 
                 <TextView
@@ -157,8 +156,8 @@
                     android:padding="5dp"
                     android:text="See On MAP"
                     android:textColor="@color/black"
-                    app:icon="@drawable/ic_location_icon"
-                    app:iconTint="@color/black"
+                    app:icon="@drawable/ic_baseline_location"
+                    app:iconTint="@color/secondary_colour"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/materialButton"
                     app:layout_constraintStart_toStartOf="parent"
@@ -174,12 +173,12 @@
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/white"
                     android:backgroundTintMode="add"
-                    android:drawableStart="@drawable/ic_location_icon"
+                    android:drawableStart="@drawable/ic_baseline_call"
                     android:padding="5dp"
                     android:text="Call Customer"
                     android:textColor="@color/black"
                     app:icon="@drawable/ic_call_icon"
-                    app:iconTint="@color/black"
+                    app:iconTint="@color/secondary_colour"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/materialButton2"
@@ -261,11 +260,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnContactLead"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="172dp"
-            android:backgroundTint="@color/primary_colour"
+            android:backgroundTint="@color/supporting_colour1"
             android:backgroundTintMode="add"
             android:padding="5dp"
             android:text="Contact Lead"
@@ -280,23 +279,10 @@
             android:layout_marginTop="10dp"
             android:text="Contact customer service only related to above mentioned and other type of issues."
             android:textColor="@color/black"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btnContactLead" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="@color/white"
-            android:backgroundTintMode="@color/black"
-            android:padding="5dp"
-            android:text="Alternate Solution"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

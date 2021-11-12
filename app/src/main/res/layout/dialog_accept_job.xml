@@ -13,12 +13,13 @@
             android:layout_alignParentStart="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <ImageButton
-            android:background="@color/white"
-            android:src="@drawable/ic_baseline_cancel"
-            android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_cancel" />
         <TextView
             android:id="@+id/descDialog"
             android:layout_marginTop="15dp"
@@ -28,13 +29,15 @@
             android:text="@string/dialog_notice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
         <com.google.android.material.button.MaterialButton
-            android:layout_below="@+id/descDialog"
             android:id="@+id/okDialog"
-            android:layout_marginTop="20dp"
-            android:text="ok"
+            android:backgroundTint="@color/supporting_colour1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descDialog"
+            android:layout_marginTop="20dp"
+            android:text="ok" />
 
     </RelativeLayout>
 </layout>
