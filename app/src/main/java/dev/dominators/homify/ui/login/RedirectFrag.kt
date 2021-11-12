@@ -10,10 +10,7 @@ import androidx.navigation.Navigation
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentRedirectBinding
 import dev.dominators.homify.ui.homepage.HomeActivity
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.*
 
 class RedirectFrag : Fragment(R.layout.fragment_redirect) {
 
@@ -34,19 +31,23 @@ class RedirectFrag : Fragment(R.layout.fragment_redirect) {
             delay(1000)
             str2 = "<font color=" + "#F72585" + ">" + "2" + "</font>"
             fragBinding.redirectNumber.setText(Html.fromHtml(str1 + str2 + str3))
-        }
-        var flag1 = CoroutineScope(Dispatchers.Main).async {
-            delay(1000)
-            str2 = "<font color=" + "#F72585" + ">" + "1" + "</font>"
-            fragBinding.redirectNumber.setText(Html.fromHtml(str1 + str2 + str3))
-        }
-        var flag3 = CoroutineScope(Dispatchers.Main).async {
-            delay(1000)
-            str2 = "<font color=" + "#F72585" + ">" + "0" + "</font>"
-            fragBinding.redirectNumber.setText(Html.fromHtml(str1 + str2 + str3))
 
-            Navigation.findNavController(view).navigate(R.id.action_redirectFrag_to_detailsFrag)
+            var flag1 = CoroutineScope(Dispatchers.Main).launch {
+                delay(1000)
+                str2 = "<font color=" + "#F72585" + ">" + "1" + "</font>"
+                fragBinding.redirectNumber.setText(Html.fromHtml(str1 + str2 + str3))
+
+                var flag3 = CoroutineScope(Dispatchers.Main).launch {
+                    delay(1000)
+                    str2 = "<font color=" + "#F72585" + ">" + "0" + "</font>"
+                    fragBinding.redirectNumber.setText(Html.fromHtml(str1 + str2 + str3))
+
+                    Navigation.findNavController(view).navigate(R.id.action_redirectFrag_to_detailsFrag)
+                }
+            }
         }
+
+
 
 
 

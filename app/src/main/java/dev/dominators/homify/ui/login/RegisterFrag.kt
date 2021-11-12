@@ -1,24 +1,20 @@
 package dev.dominators.homify.ui.login
 
 import android.app.Activity
-import android.content.Intent
-import android.os.Build
 import android.os.Bundle
-import android.os.SystemClock
 import android.text.Editable
+import android.text.Html
 import android.text.TextWatcher
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.Navigation
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.*
+import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import dev.dominators.homify.R
@@ -54,7 +50,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
         val numberDialog = BottomSheetDialog(requireContext())
         val view1 = layoutInflater.inflate(R.layout.bottomsheet_register, null)
         registerBinding = BottomsheetRegisterBinding.bind(view1)
-
+        registerBinding.conditionRegister.setText(Html.fromHtml("I agree to the"+"<font color=" + "#FFBC11" + ">" + " Terms and Conditions" + "</font> and"+"<font color=" + "#FFBC11" + ">" + " Privacy Policy" + "</font>."))
 
         numberDialog.setContentView(view1)
         numberDialog.show()
@@ -66,16 +62,23 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
         otDdialog.setContentView(view2)
 
         registerBinding.verifyOtpRegister.setOnClickListener {
-            phoneNum = registerBinding.etMobileNo.text.toString()
-            sendVerificationCode()
-            otpBinding.tvMobileNumberShow.text = " Which has sent to your Mobile Number ${phoneNum}"
-            numberDialog.dismiss()
-            otDdialog.show()
+            if(registerBinding.conditionRegister.isChecked) {
+                phoneNum = registerBinding.etMobileNo.text.toString()
+//            sendVerificationCode()
+                otpBinding.tvMobileNumberShow.text =
+                    " Which has sent to your Mobile Number ${phoneNum}"
+                numberDialog.dismiss()
+                otDdialog.show()
+            }else{
+                Toast.makeText(activity?.applicationContext,"Accept terms and condition",Toast.LENGTH_SHORT)
+            }
         }
 
         otpToMove()
         var otp=""
         otpBinding.continueGoogleRegister.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.action_registerFrag_to_redirectFrag)
 
             otpBinding.apply {
                 otp += et1.text
@@ -88,11 +91,10 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 if (otp.equals("")){
                     et4.error = "Invalid OTP"
                 }else{
-                    verifyCode(otp)
+//                    verifyCode(otp)
                 }
             }
 
-            Navigation.findNavController(view).navigate(R.id.action_registerFrag_to_redirectFrag)
             otDdialog.dismiss()
         }
 
@@ -108,6 +110,8 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 super.onCodeSent(p0, p1)
                 verificationCode = p0
 
+                Toast.makeText(requireContext(),"code sent",Toast.LENGTH_SHORT)
+
             }
 
             override fun onVerificationCompleted(p0: PhoneAuthCredential) {
@@ -115,6 +119,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 if (code != null) {
                     verifyCode(code)
                 }
+                Toast.makeText(requireContext(),"code sent",Toast.LENGTH_SHORT)
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {
@@ -144,8 +149,9 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                     auth.currentUser?.let { it1 ->
                         //addUserDetailsToDatabase(it1.uid)
                     }
-                    val intent = Intent(activity?.applicationContext, HomeActivity::class.java)
-                    startActivity(intent)
+//                    val intent = Intent(activity?.applicationContext, HomeActivity::class.java)
+//                    startActivity(intent)
+
                 } else {
                     Toast.makeText(activity?.applicationContext, "FAIL", Toast.LENGTH_LONG).show()
                 }

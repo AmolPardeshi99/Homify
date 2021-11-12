@@ -12,13 +12,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.homepage.JobDetailPage">
+        tools:context=".ui.JobCheck.JobDetailPage">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tvToolBarJobDetail"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
             android:background="@color/primary_colour"
+            android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:background="@color/primary_colour"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -22,24 +23,41 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="35dp"
                 android:text="Register"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_colour"
                 android:textSize="24sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Enter number"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/etMobileNo"
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:hint="Enter Mobile Number"
-                android:inputType="numberDecimal"
-                android:maxLength="10" />
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/white"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/conditionRegister"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"
+                android:layout_marginTop="15dp"
+                android:text="I agree to the Terms and Conditions and Privacy Policey."
+                android:layout_height="wrap_content"/>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,39 +65,49 @@
                 android:gravity="bottom"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="132dp"
-                    app:cardCornerRadius="6dp">
-
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/verifyOtpRegister"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:background="@color/primary_colour"
+                        android:layout_marginTop="132dp"
+                        android:backgroundTint="@color/supporting_colour1"
                         android:paddingVertical="10dp"
                         android:text="verify otp"
+                        app:cornerRadius="6dp"
                         android:textColor="@color/white" />
 
-                </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
-                    app:cardCornerRadius="6dp">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/continueGoogleRegister"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:backgroundTint="@color/grey"
+                        app:strokeColor="@color/white"
+                        app:strokeWidth="1dp"
+                        android:layout_marginTop="32dp"
+                        app:cornerRadius="6dp"
+                        android:backgroundTint="@color/primary_colour"
                         android:drawableLeft="@drawable/google"
                         android:text="Continue with google"
-                        android:textColor="@color/black" />
+                        android:textColor="@color/white" />
 
-                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_marginVertical="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Already have an account?  "
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/goToLoginFRegister"
+                        android:textColor="@color/secondary_colour"
+                        android:text="Log In"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
             </LinearLayout>
 
 

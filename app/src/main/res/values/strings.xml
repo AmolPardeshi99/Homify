@@ -5,6 +5,12 @@
     <string name="intro_two">Will Provide Training support to improve working skills.</string>
     <string name="intro_three">Get any help from the Co-workers and Engineer Leads at work Location.</string>
     <string name="lang_str">For better experience choose comfortable language</string>
+    <string name="job_address">G92-419/1, Pragathi Nagar,\n kutkatpally, Hydrabad, Telangana.\n500009, India.</string>
+    <string name="customer_reqruirements">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse iaculis dui sed dolor iaculis, sed lobortis.Crassuscipit ligula in felis volutpat efficitur.
+        Morbi sed diam vel purus gravida porttitor a ut nisl.In at justo quis felis laoreet volutpat.
+        Maecenas et nisi id nisi ultrices facilisis</string>
+    <string name="dialog_notice">Make sure that before starting the work, The customer had to pay 70% of the booking amount.</string>
     <string name="on_present_job">On Present Job</string>
     <string name="presentjob_desc">To improve working skills effectively</string>
     <string name="training">Training</string>
@@ -15,6 +21,13 @@
     <string name="week">Week</string>
     <string name="dummy_address">195P, Narasingi-Puppaplaguda Main Rd,Anupama Homes, Hyderabad Telangana-500414, India.</string>
     <string name="training_benefits">Incentives will be provided on monthly basis after completing the training and learnings test with good Score.</string>
+    <string name="solution_finder_support1">\u2022 It will help the worker to solve the issues or any cahllenges on finding problems easily at the work location.</string>
+    <string name="solution_finder_support2">\u2022 It will give video support on previues problem findings.</string>
+    <string name="solution_finder_support3">\u2022 You can contact to the co-worker of the company and Job Executive.-</string>
+    <string name="worker_support_open">Make a Call and discuss about the challange you are facing and find the solution.</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
     <string-array name="languages">
         <item>Choose language</item>
         <item>English</item>
