@@ -17,7 +17,7 @@
             android:id="@+id/tvToolBarJobDetail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/supporting_colour1"
+            android:background="@color/primary_colour"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -28,8 +28,10 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:background="#0000ffff"
+                    android:layout_marginStart="-10dp"
+                    android:contentDescription="TODO"
                     android:src="@drawable/ic_prev_icon" />
 
                 <TextView
@@ -50,13 +52,16 @@
 
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
-        <androidx.cardview.widget.CardView
+
+
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPresentJob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
+            android:elevation="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,10 +94,10 @@
                     android:id="@+id/tvOnPresentJob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/on_present_job"
-                    android:textSize="18sp"
                     android:layout_marginStart="10dp"
+                    android:text="@string/on_present_job"
                     android:textColor="@color/black"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon1"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -105,13 +110,14 @@
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon1"
                     app:layout_constraintTop_toBottomOf="@id/tvOnPresentJob" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardNewJob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:elevation="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardPresentJob">
@@ -143,10 +149,10 @@
                     android:id="@+id/tvOnNewJob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Learn a new job"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
                     android:layout_marginStart="10dp"
+                    android:text="Learn a new job"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon2"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -154,25 +160,35 @@
                     android:id="@+id/tvNewJobDesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="To get daily work opportunities"
                     android:layout_marginStart="10dp"
+                    android:text="To get daily work opportunities"
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon2"
                     app:layout_constraintTop_toBottomOf="@id/tvOnNewJob" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
         <TextView
+            android:id="@+id/tvUseOfTraining"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Use of training?"
             android:layout_margin="20dp"
+            android:text="Use of training?"
+            android:textColor="@color/secondary_colour"
+            android:textSize="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardNewJob" />
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/tvUseOfTraining"
+            app:layout_constraintTop_toBottomOf="@id/tvUseOfTraining"
+            android:text="@string/training_benefits" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

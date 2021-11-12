@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.training.TestResultFragment">
+
+<!--    toolbar         -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/quizToolbar"
             android:layout_width="match_parent"
@@ -48,7 +50,6 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
-
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:backgroundTintMode="add"
@@ -59,5 +60,14 @@
             android:layout_height="wrap_content"
             android:text="Improve Working Skills"
             />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center" />
+
+
+
     </LinearLayout>
 </layout>

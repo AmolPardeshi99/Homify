@@ -67,4 +67,8 @@ dependencies {
 
     // circular imageview
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // graphs and chart
+    implementation files('libs/MPAndroidChart-v3.0.1.jar')
+
 }

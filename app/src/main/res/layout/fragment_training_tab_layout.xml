@@ -40,7 +40,6 @@
             app:layout_constraintTop_toBottomOf="@+id/tvMyBookings"
             app:tabGravity="fill"
             app:tabIndicatorColor="@color/secondary_colour"
-            app:tabIndicatorHeight="3dp"
             app:tabIndicatorGravity="stretch"
             app:tabMode="fixed"
             app:tabIndicator="@color/primary_colour"
