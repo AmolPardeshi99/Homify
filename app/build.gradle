@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
 }
 
@@ -70,5 +71,12 @@ dependencies {
 
     // graphs and chart
     implementation files('libs/MPAndroidChart-v3.0.1.jar')
+
+    // youtube player
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    //Youtube Video
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 
 }

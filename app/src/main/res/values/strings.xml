@@ -13,7 +13,6 @@
     <string name="dialog_notice">Make sure that before starting the work, The customer had to pay 70% of the booking amount.</string>
     <string name="on_present_job">On Present Job</string>
     <string name="presentjob_desc">To improve working skills effectively</string>
-    <string name="training">Training</string>
     <string name="question">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</string>
     <string name="all">All</string>
     <string name="today">Today</string>
@@ -28,6 +27,12 @@
 
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="tvPreferable">Select Preferable Training</string>
+    <string name="video_desc">Ep-01 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="newJob_desc">To get daily work opportunities</string>
+    <string name="use_of_training">Use of training?</string>
+    <string name="learn_a_new_job">Learn a new job</string>
+    <string name="training">Training</string>
     <string-array name="languages">
         <item>Choose language</item>
         <item>English</item>

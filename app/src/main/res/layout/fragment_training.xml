@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.homepage.TrainingFragment">
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tvToolBarJobDetail"
             android:layout_width="match_parent"
@@ -29,23 +28,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:background="#0000ffff"
                     android:layout_marginStart="-10dp"
-                    android:contentDescription="TODO"
+                    android:background="#0000ffff"
                     android:src="@drawable/ic_prev_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Training"
+                    android:text="@string/training"
                     android:textColor="@color/white"
                     android:textSize="19sp" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:background="#0000ffff"
                     android:src="@drawable/ic_question_icon" />
 
@@ -54,18 +52,32 @@
         </androidx.appcompat.widget.Toolbar>
 
 
+        <TextView
+            android:id="@+id/tvPreferableTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="170dp"
+            android:text="@string/tvPreferable"
+            android:textColor="@color/primary_colour"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvToolBarJobDetail" />
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPresentJob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
             android:elevation="3dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/tvPreferableTraining"
+            app:strokeColor="@color/primary_colour"
+            app:strokeWidth="1dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -76,6 +88,7 @@
                     android:id="@+id/ivVideoIcon1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/ic_video_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -120,7 +133,9 @@
             android:elevation="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardPresentJob">
+            app:layout_constraintTop_toBottomOf="@id/cardPresentJob"
+            app:strokeColor="@color/primary_colour"
+            app:strokeWidth="1dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -131,6 +146,7 @@
                     android:id="@+id/ivVideoIcon2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
                     android:src="@drawable/ic_video_icon"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Learn a new job"
+                    android:text="@string/learn_a_new_job"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon2"
@@ -161,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="To get daily work opportunities"
+                    android:text="@string/newJob_desc"
                     app:layout_constraintStart_toEndOf="@id/ivVideoIcon2"
                     app:layout_constraintTop_toBottomOf="@id/tvOnNewJob" />
 
@@ -176,9 +192,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Use of training?"
+            android:text="@string/use_of_training"
             android:textColor="@color/secondary_colour"
-            android:textSize="16dp"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardNewJob" />
 
@@ -187,8 +203,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
+            android:text="@string/training_benefits"
             app:layout_constraintStart_toStartOf="@id/tvUseOfTraining"
-            app:layout_constraintTop_toBottomOf="@id/tvUseOfTraining"
-            android:text="@string/training_benefits" />
+            app:layout_constraintTop_toBottomOf="@id/tvUseOfTraining" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

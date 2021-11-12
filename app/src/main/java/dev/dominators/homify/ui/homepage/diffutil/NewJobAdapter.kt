@@ -42,8 +42,6 @@ class NewJobAdapter(
 
 
 
-//
-//
 //fun updateData(newJobDataList:List<NewJobData>){
 //    val diffUtilCallBack = NewJobDiffUtilCallBack(jobList,newJobDataList)
 //    val diffResult = DiffUtil.calculateDiff(diffUtilCallBack)

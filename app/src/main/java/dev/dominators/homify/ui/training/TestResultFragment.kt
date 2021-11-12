@@ -59,6 +59,5 @@ class TestResultFragment : Fragment() {
         list.add(PieEntry(25f,"Incorrect Answers"))
     }
 
-
     // pieChart.inValidate()
 }

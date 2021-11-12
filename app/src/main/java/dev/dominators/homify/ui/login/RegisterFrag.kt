@@ -158,10 +158,10 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
             })
 
     }
-//
+
 //    private fun addUserDetailsToDatabase(uid: String) {
 //        val db = Firebase.firebase
-//        val user = com.amol.travelbus.models.local.Users(phoneNumber.toString(), uid)
+//        val user = Users(phoneNumber.toString(), uid)
 //        db.collection("users").document(uid).set(user)
 //    }
 
