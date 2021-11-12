@@ -3,14 +3,14 @@ package dev.dominators.homify.ui.ongoing
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter
 
-class OngoingPagerAdapter: FragmentPagerAdapter {
+class OngoingPagerAdapter: FragmentPagerAdapter(val fra) {
 
     private val fragmentList = arrayListOf<Fragment>()
     private val titleList = arrayListOf<String>()
 
 
     override fun getCount(): Int {
-        fragmentList.size
+        return fragmentList.size
     }
 
     override fun getItem(position: Int): Fragment {

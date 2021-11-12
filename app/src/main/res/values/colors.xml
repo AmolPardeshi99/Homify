@@ -22,5 +22,6 @@
     <color name="light_grey">#F2F2F2</color>
     <color name="support_colour2">#4361EE</color>
     <color name="light_btn_colour">#EEF2F5</color>
+    <color name="light_grey_btnborder">#CCCCCC</color>
 
 </resources>
