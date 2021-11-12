@@ -8,6 +8,7 @@
         app:cardCornerRadius="20dp">
 
         <LinearLayout
+            android:background="@color/primary_colour"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -18,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Enter OTP"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_colour"
                 android:textSize="24sp" />
 
             <TextView
@@ -30,70 +31,91 @@
                 android:layout_marginBottom="147dp"
                 android:gravity="center"
                 android:text=" Which has sent to your Mobile Number 9845821544"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="131dp">
+                android:layout_marginTop="20dp">
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et1"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et2"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et3"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et4"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et5"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
                 <EditText
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/rectangle"
                     android:id="@+id/et6"
-                    android:layout_width="35dp"
+                    android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:maxLength="1"
                     android:gravity="center"
-                    android:textSize="24sp" />
+                    android:textSize="35sp" />
 
             </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="end"
+                android:textColor="@color/supporting_colour1"
+                android:layout_marginBottom="131dp"
+                android:id="@+id/resendOTP"
+                android:text="resend OTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,20 +123,16 @@
                 android:gravity="bottom"
                 android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="6dp">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/continueGoogleRegister"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/primary_colour"
+                        android:backgroundTint="@color/supporting_colour1"
                         android:text="Verify OTP"
+                        app:cornerRadius="6dp"
                         android:textColor="@color/white" />
 
-                </androidx.cardview.widget.CardView>
 
 
             </LinearLayout>
