@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_your_bookings"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Completed Jobs" />
+
+        <item
+            android:id="@+id/nav_coupons"
+            android:title="My Salary details" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Customer Ratings" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:title="Helpers/Co-workers" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="Incentives" />
+
+        <item android:id="@+id/helo_support"
+            android:title="Help &amp; Support"/>
+
+        <item android:id="@+id/training_completed"
+            android:title="Completed Training"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

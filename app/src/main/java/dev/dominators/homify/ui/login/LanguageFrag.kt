@@ -34,6 +34,7 @@ class LanguageFrag : Fragment(R.layout.fragment_language) {
 
         langBinding.nextToRegister.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_languageFrag_to_registerFrag)
+            dialog.dismiss()
         }
 
     }

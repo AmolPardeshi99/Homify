@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
+        android:background="@color/primary_colour"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:padding="20dp"
@@ -8,8 +9,8 @@
 
         <TextView
             android:layout_marginBottom="40dp"
-            android:text="Welcome"
-            android:textColor="@color/black"
+            android:text="Welcome!"
+            android:textColor="@color/secondary_colour"
             android:textSize="24sp"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -17,7 +18,7 @@
 
         <TextView
             android:textSize="12sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:text="@string/lang_str"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -35,7 +36,7 @@
             android:id="@+id/nextToRegister"
             android:textColor="@color/white"
             android:text="next"
-            android:background="@color/primary_colour"
+            android:backgroundTint="@color/supporting_colour1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
