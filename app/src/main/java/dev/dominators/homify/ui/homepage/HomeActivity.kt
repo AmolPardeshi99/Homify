@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationBarView
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.ActivityMainBinding
+import dev.dominators.homify.ui.training.TrainingTabLayout
 
 class HomeActivity : AppCompatActivity() {
 
@@ -100,3 +101,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 }
+
+
+
+//R.id.menu_training -> temp = TrainingTabLayout()
