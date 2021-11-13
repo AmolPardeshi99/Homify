@@ -35,6 +35,8 @@ class HomeFragment : Fragment() {
         return view
     }
 
+
+
     private fun buildData() {
         for (i in 1..3){
             val newJobData = NewJobData("10:00 PM","Ranjan${1}",
