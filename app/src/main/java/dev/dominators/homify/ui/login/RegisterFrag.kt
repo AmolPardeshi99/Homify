@@ -64,7 +64,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
         registerBinding.verifyOtpRegister.setOnClickListener {
             if(registerBinding.conditionRegister.isChecked) {
                 phoneNum = registerBinding.etMobileNo.text.toString()
-//            sendVerificationCode()
+            sendVerificationCode()
                 otpBinding.tvMobileNumberShow.text =
                     " Which has sent to your Mobile Number ${phoneNum}"
                 numberDialog.dismiss()
@@ -91,7 +91,7 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 if (otp.equals("")){
                     et4.error = "Invalid OTP"
                 }else{
-//                    verifyCode(otp)
+                    verifyCode(otp)
                 }
             }
 

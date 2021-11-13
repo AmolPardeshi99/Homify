@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:paddingVertical="10dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:hint="Enter Mobile Number"
                     android:inputType="numberDecimal"
                     android:maxLength="10" />
