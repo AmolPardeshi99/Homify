@@ -25,5 +25,6 @@ class TrainingQuizFragment : Fragment() {
             Navigation.findNavController(fragmentQuizBinding.root).navigate(R.id.action_trainingQuizFragment_to_testResultFragment)
         }
         return fragmentQuizBinding.root
+
     }
 }
