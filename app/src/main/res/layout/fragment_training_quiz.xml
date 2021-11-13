@@ -78,8 +78,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
-                        android:textColor="@color/black"
-                        android:text="@string/question" />
+                        android:text="@string/question1"
+                        android:textColor="@color/black" />
 
                     <RadioGroup
                         android:id="@+id/rbtnGroupQuiz1"
@@ -91,25 +91,25 @@
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q1o1"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q1o2"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q1o3"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q1o4"/>
                         />
                     </RadioGroup>
                 </LinearLayout>
@@ -125,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
                         android:textColor="@color/black"
-                        android:text="@string/question" />
+                        android:text="@string/question2" />
 
                     <RadioGroup
                         android:id="@+id/rbtnGroupQuiz2"
@@ -137,25 +137,25 @@
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q2o1"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q2o2"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q2o3"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q2o4"/>
                         />
                     </RadioGroup>
                 </LinearLayout>
@@ -171,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
                         android:textColor="@color/black"
-                        android:text="@string/question" />
+                        android:text="@string/question3" />
 
                     <RadioGroup
                         android:id="@+id/rbtnGroupQuiz3"
@@ -183,25 +183,25 @@
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q3o1"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q3o2"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q3o3"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q3o4"/>
                         />
                     </RadioGroup>
                 </LinearLayout>
@@ -217,7 +217,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
                         android:textColor="@color/black"
-                        android:text="@string/question" />
+                        android:text="@string/question4" />
 
                     <RadioGroup
                         android:id="@+id/rbtnGroupQuiz4"
@@ -229,25 +229,25 @@
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q4o1"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q4o2"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q4o3"/>
                         />
                         <RadioButton
                             android:layout_marginVertical="7dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/question"/>
+                            android:text="@string/q4o4"/>
                         />
                     </RadioGroup>
                 </LinearLayout>
@@ -263,6 +263,7 @@
             android:backgroundTint="@color/secondary_colour"
             android:backgroundTintMode="add"
             android:text="Check Score"
+            app:backgroundTint="@color/secondary_colour"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

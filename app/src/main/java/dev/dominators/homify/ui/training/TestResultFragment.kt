@@ -27,13 +27,14 @@ class TestResultFragment : Fragment() {
     ): View? {
         fragmentTestResultBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_test_result,container,false)
 
-        return return fragmentTestResultBinding.root
+         return fragmentTestResultBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val list = arrayListOf<PieEntry>()
+
         addDatatoList(list)
         val pieDataSet = PieDataSet(list,"Test Result")
         pieDataSet.colors = ColorTemplate.JOYFUL_COLORS.asList()

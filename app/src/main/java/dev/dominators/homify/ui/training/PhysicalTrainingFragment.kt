@@ -5,4 +5,5 @@ import dev.dominators.homify.R
 
 class PhysicalTrainingFragment : Fragment(R.layout.fragment_physical_training) {
 
+
 }
