@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/training_nav"
+    app:startDestination="@id/trainingFragment">
+
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="dev.dominators.homify.ui.homepage.TrainingFragment"
+        android:label="TrainingFragment" >
+        <action
+            android:id="@+id/action_trainingFragment_to_trainingTabLayout"
+            app:destination="@id/trainingTabLayout" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingTabLayout"
+        android:name="dev.dominators.homify.ui.training.TrainingTabLayout"
+        android:label="TrainingTabLayout" >
+        <action
+            android:id="@+id/action_trainingTabLayout_to_trainingQuizFragment"
+            app:destination="@id/trainingQuizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trainingQuizFragment"
+        android:name="dev.dominators.homify.ui.training.TrainingQuizFragment"
+        android:label="TrainingQuizFragment" >
+        <action
+            android:id="@+id/action_trainingQuizFragment_to_testResultFragment"
+            app:destination="@id/testResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testResultFragment"
+        android:name="dev.dominators.homify.ui.training.TestResultFragment"
+        android:label="TestResultFragment" />
+</navigation>

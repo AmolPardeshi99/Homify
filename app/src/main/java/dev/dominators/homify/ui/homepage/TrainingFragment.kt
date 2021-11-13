@@ -10,4 +10,6 @@ import dev.dominators.homify.R
 class TrainingFragment : Fragment(R.layout.fragment_training) {
 
 
+
+
 }
