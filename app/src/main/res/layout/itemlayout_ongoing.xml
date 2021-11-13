@@ -1,96 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginVertical="5dp"
-    app:cardCornerRadius="10dp">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <data>
+        <variable
+            name="job"
+            type="dev.dominators.homify.datamodel.Jobs" />
+    </data>
+    <com.google.android.material.card.MaterialCardView 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="3dp"
-        android:paddingBottom="15dp">
+        android:layout_height="wrap_content"
+        app:strokeWidth="1dp"
+        android:layout_marginVertical="10dp"
+        app:strokeColor="@color/grey"
+        app:cardCornerRadius="10dp">
 
-        <TextView
-            android:id="@+id/tvOGName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="J Santosh"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="3dp"
+            android:paddingBottom="15dp">
 
-        <TextView
-            android:id="@+id/tvOGAdd"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/dummy_address"
-            android:textSize="13sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvOGName" />
+            <TextView
+                android:id="@+id/tvOGName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@{job.name}"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnOGContact"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="2dp"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/call_icon_yellow"
-            android:text="contact"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="6dp"
-            app:layout_constraintStart_toStartOf="@id/tvOGAdd"
-            app:layout_constraintTop_toBottomOf="@id/tvOGAdd"
-            app:strokeColor="@color/light_grey_btnborder"
-            app:strokeWidth="2dp" />
+            <TextView
+                android:id="@+id/tvOGAdd"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@{job.address}"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOGName" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="3dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/direction_icon"
-            android:text="Direction"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            app:cornerRadius="6dp"
-            app:layout_constraintStart_toEndOf="@id/btnOGContact"
-            app:layout_constraintTop_toBottomOf="@id/tvOGAdd"
-            app:strokeColor="@color/light_grey_btnborder"
-            app:strokeWidth="2dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOGContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/call_icon_yellow"
+                android:text="contact"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:cornerRadius="6dp"
+                app:layout_constraintStart_toStartOf="@id/tvOGAdd"
+                app:layout_constraintTop_toBottomOf="@id/tvOGAdd"
+                app:strokeColor="@color/light_grey_btnborder"
+                app:strokeWidth="2dp" />
 
-        <TextView
-            android:id="@+id/tvOGTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="10:00 AM"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/direction_icon"
+                android:text="Direction"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:cornerRadius="6dp"
+                app:layout_constraintStart_toEndOf="@id/btnOGContact"
+                app:layout_constraintTop_toBottomOf="@id/tvOGAdd"
+                app:strokeColor="@color/light_grey_btnborder"
+                app:strokeWidth="2dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="15dp"
-            android:text="Mon 7 Jun"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvOGTime" />
+            <TextView
+                android:id="@+id/tvOGTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="@{job.time}"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="15dp"
+                android:text="@{job.date}"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOGTime" />
 
-</com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

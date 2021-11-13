@@ -16,30 +16,17 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/ongoingTabLayout"
             android:layout_width="match_parent"
-            app:layout_constraintBottom_toTopOf="@id/ongoingViewPager"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_colour"
+            app:layout_constraintBottom_toTopOf="@id/ongoingViewPager"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/MyTabTextAppearance"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicatorColor="@color/yellowClour"
+            app:tabTextColor="@color/grey">
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/all" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/today" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tomorrow" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/week" />
         </com.google.android.material.tabs.TabLayout>
 
 
@@ -47,9 +34,9 @@
             android:id="@+id/ongoingViewPager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ongoingTabLayout"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ongoingTabLayout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
