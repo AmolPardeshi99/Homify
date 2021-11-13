@@ -1,20 +1,20 @@
 package dev.dominators.homify.ui.splash_screen
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import android.widget.MediaController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import dev.dominators.homify.R
 import dev.dominators.homify.databinding.ActivitySplashScreenBinding
 import dev.dominators.homify.ui.Introduction.IntroActivity
 import dev.dominators.homify.ui.homepage.HomeActivity
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
+import android.net.Uri
+import android.view.WindowManager
+import dev.dominators.homify.R
+
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -23,13 +23,26 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(1)
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
+        window.statusBarColor = Color.BLACK
+
         dataBinding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(dataBinding.root)
         auth = Firebase.auth
 
-        CoroutineScope(Dispatchers.Main).async {
-            delay(2000)
+        var videoView = dataBinding.videoView
 
+        dataBinding.videoView.setMediaController(MediaController(this))
+
+        val path: Uri = Uri.parse("android:resource://dev.dominators.homify/"+ R.raw.splash_screen)
+        videoView.setVideoURI(path)
+
+        videoView.setOnPreparedListener { mp -> mp.start() }
+        videoView.setOnCompletionListener {
             if (auth.currentUser != null) {
                 Intent()
                 val intent = Intent(this@SplashScreenActivity, HomeActivity::class.java)
@@ -38,9 +51,8 @@ class SplashScreenActivity : AppCompatActivity() {
                 val intent = Intent(this@SplashScreenActivity, IntroActivity::class.java)
                 startActivity(intent)
             }
-            finish()
-
         }
+
 
 
     }
