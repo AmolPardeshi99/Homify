@@ -21,6 +21,7 @@
             app:civ_border_width="2dp" />
 
         <ImageView
+            android:id="@+id/cancelHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

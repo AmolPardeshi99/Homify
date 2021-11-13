@@ -28,6 +28,7 @@ class HomeFragment : Fragment() {
     lateinit var fragmentHomeBinding: FragmentHomeBinding
     lateinit var newJobAdapter: NewJobAdapter
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -42,6 +43,8 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = newJobAdapter
         return view
     }
+
+
 
 
 
