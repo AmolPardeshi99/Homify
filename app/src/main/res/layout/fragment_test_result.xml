@@ -178,8 +178,6 @@
         </androidx.cardview.widget.CardView>
 
 
-
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/finishTest"
         android:layout_margin="20dp"

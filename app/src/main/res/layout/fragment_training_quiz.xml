@@ -263,6 +263,8 @@
             android:backgroundTint="@color/secondary_colour"
             android:backgroundTintMode="add"
             android:text="Check Score"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
             app:backgroundTint="@color/secondary_colour"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

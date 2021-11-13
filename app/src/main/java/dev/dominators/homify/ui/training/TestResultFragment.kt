@@ -33,7 +33,7 @@ class TestResultFragment : Fragment() {
             val intent = Intent(requireContext(),HomeActivity::class.java)
             startActivity(intent)
         }
-        return return fragmentTestResultBinding.root
+         return fragmentTestResultBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
