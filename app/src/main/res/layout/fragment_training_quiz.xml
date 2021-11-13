@@ -52,14 +52,211 @@
         </androidx.appcompat.widget.Toolbar>
 
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ScrollView
             android:id="@+id/quizRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btnCheckScore"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/quizToolbar" />
+            app:layout_constraintTop_toBottomOf="@id/quizToolbar" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/black"
+                        android:text="@string/question" />
+
+                    <RadioGroup
+                        android:id="@+id/rbtnGroupQuiz1"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="ExtraText">
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/black"
+                        android:text="@string/question" />
+
+                    <RadioGroup
+                        android:id="@+id/rbtnGroupQuiz2"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="ExtraText">
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/black"
+                        android:text="@string/question" />
+
+                    <RadioGroup
+                        android:id="@+id/rbtnGroupQuiz3"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="ExtraText">
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/black"
+                        android:text="@string/question" />
+
+                    <RadioGroup
+                        android:id="@+id/rbtnGroupQuiz4"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="ExtraText">
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                        <RadioButton
+                            android:layout_marginVertical="7dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question"/>
+                        />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckScore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/secondary_colour"
