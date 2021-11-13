@@ -33,10 +33,10 @@
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/menu_bottom"
-                app:itemRippleColor="@color/secondary_colour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                app:itemRippleColor="@color/secondary_colour"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_menu" />
 
