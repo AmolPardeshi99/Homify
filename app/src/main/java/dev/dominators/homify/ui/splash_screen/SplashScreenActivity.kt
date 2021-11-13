@@ -36,7 +36,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         var videoView = dataBinding.videoView
 
-        dataBinding.videoView.setMediaController(MediaController(this))
+        videoView.setMediaController(MediaController(this))
 
         val path: Uri = Uri.parse("android:resource://dev.dominators.homify/"+ R.raw.splash_screen)
         videoView.setVideoURI(path)
