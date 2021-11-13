@@ -18,7 +18,9 @@
             android:windowSoftInputMode="adjustResize">
 
         </activity>
+
         <activity android:name=".ui.Introduction.IntroActivity" />
+
         <activity
             android:name=".ui.homepage.HomeActivity"
             android:exported="true">
@@ -27,19 +29,17 @@
         <activity
             android:name=".ui.splash_screen.SplashScreenActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
         <activity
             android:name=".ui.training.VideoPlayingFragment"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity

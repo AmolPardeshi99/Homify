@@ -10,7 +10,8 @@ import kotlinx.android.synthetic.main.fragment_video_playing.*
 class VideoPlayingFragment : YouTubeBaseActivity() {
 
 
-    val VIDEO_ID = "oI3IqUSmw_k"
+    //val VIDEO_ID = "oI3IqUSmw_k"
+    val VIDEO_ID = "oGdzjHe2wvA"
     val YOUTUBE_APIKEY = "AIzaSyABGNzUKX7NNoGO1n7s7oNSaRrhsFWXDQI"
 
     // private lateinit var moviePlayLink: String

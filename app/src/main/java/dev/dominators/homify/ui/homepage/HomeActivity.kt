@@ -42,6 +42,7 @@ class HomeActivity : AppCompatActivity() {
             it.isChecked = true
 
             when (it.itemId) {
+
 //                R.id.nav_settings ->
 //                    replaceFragment(SettingsFragment(), it.title.toString())
 //

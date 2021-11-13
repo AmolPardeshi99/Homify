@@ -14,6 +14,8 @@ import dev.dominators.homify.ui.homepage.diffutil.NewJobData
 
 class HomeFragment : Fragment() {
 
+
+
     lateinit var fragmentHomeBinding: FragmentHomeBinding
     var newJobList = arrayListOf<NewJobData>()
     lateinit var newJobAdapter: NewJobAdapter
