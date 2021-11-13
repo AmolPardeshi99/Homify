@@ -3,14 +3,14 @@ package dev.dominators.homify.ui.homepage.diffutil
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.NewworkItemLayoutBinding
+import dev.dominators.homify.datamodel.Jobs
 
 
 class NewJobAdapter(
-    private val newJobDataList:List<NewJobData>
+    private val newJobDataList: ArrayList<Jobs>
 ) : RecyclerView.Adapter<NewJobAdapter.NewJobViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewJobViewHolder {
@@ -31,7 +31,7 @@ class NewJobAdapter(
     class NewJobViewHolder(private val itemview : NewworkItemLayoutBinding) :
         RecyclerView.ViewHolder(itemview.root) {
 
-        fun setData(newJobData: NewJobData) {
+        fun setData(newJobData: Jobs) {
             itemview.jobDataModel = newJobData
         }
     }
