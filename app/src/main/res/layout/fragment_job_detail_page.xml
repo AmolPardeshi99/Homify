@@ -7,8 +7,9 @@
 
         <variable
             name="jobDataModel"
-            type="dev.dominators.homify.datamodel.NewJobData" />
+            type="dev.dominators.homify.datamodel.Jobs" />
     </data>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -75,8 +76,9 @@
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginBottom="20dp"
-                    android:text="@{jobDataModel.customerName}"
+                    android:text="@{jobDataModel.name}"
                     android:textSize="16sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/tvJobStarted"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -87,8 +89,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="28dp"
-                    android:text="@{jobDataModel.newJobTime}"
+                    android:text="@{jobDataModel.time}"
                     android:textSize="15sp"
+                    android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,8 +102,9 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="28dp"
                     android:layout_marginBottom="10dp"
-                    android:text="@{jobDataModel.newJobDate}"
+                    android:text="@{jobDataModel.date}"
                     android:textSize="15sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@id/tvJobStarted"
                     app:layout_constraintEnd_toEndOf="parent" />
 
@@ -134,21 +138,23 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_marginStart="8dp"
+                    android:textColor="@color/black"
                     android:layout_marginTop="12dp"
                     android:inputType="textMultiLine"
-                    android:text="@{jobDataModel.customerAdd}"
-                    android:textSize="18sp"
+                    android:text="@{jobDataModel.address}"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvCustomerLocation" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/materialButton2"
                     style="@style/MaterialAlertDialog.MaterialComponents.Title.Icon"
-                    android:layout_width="180dp"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="29dp"
+                    app:iconGravity="textStart"
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/white"
                     android:backgroundTintMode="add"
@@ -173,6 +179,7 @@
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/white"
                     android:backgroundTintMode="add"
+                    app:iconGravity="textStart"
                     android:drawableStart="@drawable/ic_baseline_call"
                     android:padding="5dp"
                     android:text="Call Customer"

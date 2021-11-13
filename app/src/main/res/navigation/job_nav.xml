@@ -11,14 +11,15 @@
         <action
             android:id="@+id/action_jobDescription_to_jobDetailPage"
             app:destination="@id/jobDetailPage" />
+        <action
+            android:id="@+id/action_jobDescription_to_solutionFinder2"
+            app:destination="@id/solutionFinder" />
     </fragment>
     <fragment
         android:id="@+id/jobDetailPage"
         android:name="dev.dominators.homify.ui.JobCheck.JobDetailPage"
         android:label="JobDetailPage" >
-        <action
-            android:id="@+id/action_jobDetailPage_to_solutionFinder"
-            app:destination="@id/solutionFinder" />
+
     </fragment>
     <fragment
         android:id="@+id/solutionFinder"

@@ -46,8 +46,15 @@ class JobDescription : Fragment(R.layout.fragment_job_description) {
                 }
             }
 
+            binding.alternateSolution.setOnClickListener {
+                Navigation.findNavController(view).navigate(R.id.action_jobDescription_to_solutionFinder2)
+            }
+
+
+            val bundle = Bundle()
+            bundle.putSerializable("jobs",jobs)
             binding.helpJob.setOnClickListener {
-                Navigation.findNavController(view).navigate(R.id.action_jobDescription_to_jobDetailPage)
+                Navigation.findNavController(view).navigate(R.id.action_jobDescription_to_jobDetailPage,bundle)
             }
 
 
