@@ -1,6 +1,7 @@
 package dev.dominators.homify.ui.homepage.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
+import dev.dominators.homify.datamodel.NewJobData
 
 class NewJobDiffUtilCallBack(
     private val oldJobList: List<NewJobData>,

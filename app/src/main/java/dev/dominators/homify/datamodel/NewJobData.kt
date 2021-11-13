@@ -1,4 +1,4 @@
-package dev.dominators.homify.ui.homepage.diffutil
+package dev.dominators.homify.datamodel
 
 data class NewJobData(
     val createdTime:String,

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="jobDataModel"
-            type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />
+            type="dev.dominators.homify.datamodel.Jobs" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Ceiling Work"
+                android:text="@{jobDataModel.type}"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
-                android:text="Created at"
+                android:text="@{jobDataModel.createdAt}"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintEnd_toStartOf="@id/tvNewJobCreatedTime"
@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:text="@{jobDataModel.createdTime}"
+                android:text="@{jobDataModel.time}"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/view_skyblue"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@{jobDataModel.customerName}"
+                android:text="@{jobDataModel.name}"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/view_skyblue" />
@@ -78,7 +78,7 @@
                 android:layout_margin="10dp"
                 android:layout_marginEnd="10dp"
                 android:inputType="textMultiLine"
-                android:text="@{jobDataModel.customerAdd}"
+                android:text="@{jobDataModel.address}"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvCustomerName" />
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@{jobDataModel.newJobTime}"
+                android:text="@{jobDataModel.time}"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/view_skyblue" />
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="@{jobDataModel.newJobDate}"
+                android:text="@{jobDataModel.date}"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tvnewJobTime" />

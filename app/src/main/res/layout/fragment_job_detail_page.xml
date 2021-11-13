@@ -7,7 +7,7 @@
 
         <variable
             name="jobDataModel"
-            type="dev.dominators.homify.ui.homepage.diffutil.NewJobData" />
+            type="dev.dominators.homify.datamodel.NewJobData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
