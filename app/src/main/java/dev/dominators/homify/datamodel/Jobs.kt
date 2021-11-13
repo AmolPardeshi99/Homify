@@ -1,5 +1,7 @@
 package dev.dominators.homify.datamodel
 
+import java.io.Serializable
+
 data class Jobs(
     val address:String,
     val contact:String,
@@ -9,4 +11,4 @@ data class Jobs(
     val time:String,
     val type:String,
     val id:String
-)
+):Serializable

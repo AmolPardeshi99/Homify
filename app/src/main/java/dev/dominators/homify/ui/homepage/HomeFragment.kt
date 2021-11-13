@@ -1,5 +1,6 @@
 package dev.dominators.homify.ui.homepage
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,11 +16,11 @@ import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentHomeBinding
 import dev.dominators.homify.datamodel.Jobs
 import dev.dominators.homify.ui.homepage.diffutil.NewJobAdapter
-import dev.dominators.homify.datamodel.NewJobData
+import dev.dominators.homify.ui.JobCheck.JobActivity
+import dev.dominators.homify.ui.homepage.clicklisteners.JobClickListener
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(),JobClickListener {
 
-    private lateinit var auth: FirebaseAuth
     private val db = Firebase.firestore
     private val jobRef = db.collection("jobs")
 
@@ -38,34 +39,42 @@ class HomeFragment : Fragment() {
         val recyclerView = fragmentHomeBinding.newJobRecycler
         recyclerView.layoutManager = LinearLayoutManager(context)
         buildData()
-        newJobAdapter = NewJobAdapter(newJobList)
-        recyclerView.adapter = newJobAdapter
         return view
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        newJobAdapter = NewJobAdapter(newJobList,this)
+        fragmentHomeBinding.newJobRecycler.adapter = newJobAdapter
+    }
+
     private fun buildData() {
-        val docRef = db.collection("cities").document("SF")
-        docRef.get()
-            .addOnSuccessListener { document ->
-                if (document != null) {
-                    Log.d(TAG, "DocumentSnapshot data: ${document.data}")
-                } else {
-                    Log.d(TAG, "No such document")
-                }
+
+        Log.d(TAG, "buildData: ${FirebaseAuth.getInstance().currentUser?.uid}")
+        jobRef.get().addOnSuccessListener { document ->
+            for (doc in document){
+                val address =doc.data.get("address").toString()
+                val contact = doc.data.get("contact").toString()
+                val createdAt = doc.data.get("createdAt").toString()
+                val date = doc.data.get("date").toString()
+                val name = doc.data.get("name").toString()
+                val time = doc.data.get("time").toString()
+                val type = doc.data.get("type").toString()
+                val id = doc.data.get("id").toString()
+                val jobs = Jobs(address, contact, createdAt, date, name, time, type, id)
+                newJobList.add(jobs)
             }
-            .addOnFailureListener { exception ->
-                Log.d(TAG, "get failed with ", exception)
-            }
-
-
-        for (i in 1..3){
-            val newJobData = NewJobData("10:00 PM","Ranjan${1}",
-                "Plot No.61, JP Colony, Jalgaon, Maharashtra, India","9:00 PM",
-                "12 Dec 2021",1234567800,"I want best service",
-                1200.0000f,0.0000f,0.0000f)
-           // newJobList.add(newJobData)
-
+            newJobAdapter.notifyDataSetChanged()
+        }.addOnFailureListener { e ->
+            Log.d(TAG, "buildData: ${e.toString()}")
         }
+    }
+
+
+    override fun setOnJobClickListener(jobs: Jobs) {
+        val intent = Intent(activity,JobActivity::class.java)
+        intent.putExtra("jobs",jobs)
+        startActivity(intent)
     }
 
 }

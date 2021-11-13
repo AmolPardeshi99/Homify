@@ -65,6 +65,7 @@
                             android:padding="8dp">
 
                             <TextView
+                                android:id="@+id/tvJDName"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentStart="true"
@@ -82,6 +83,7 @@
                                 android:textSize="16sp" />
 
                             <TextView
+                                android:id="@+id/tvJDDate"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_below="@+id/timeJobDesc"
@@ -109,7 +111,8 @@
                             android:text="Customer Location" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/tvJDAdd"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="15dp"
                             android:layout_marginTop="8dp"
@@ -195,19 +198,21 @@
                     android:layout_marginHorizontal="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
-                        android:text="Booking Amount"
-                        android:layout_alignParentStart="true"
-                        android:textColor="@color/black"
                         android:id="@+id/bookingAmountText"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Booking Amount"
+                        android:textColor="@color/black" />
+
                     <TextView
                         android:id="@+id/bookingAmountNumber"
-                        android:text="5670.0"
-                        android:layout_alignParentEnd="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="5670.0" />
 
                     <TextView
                         android:layout_marginTop="6dp"
