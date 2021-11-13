@@ -32,11 +32,11 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/okDialog"
-            android:backgroundTint="@color/supporting_colour1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/descDialog"
             android:layout_marginTop="20dp"
+            android:backgroundTint="@color/secondary_colour"
             android:text="ok" />
 
     </RelativeLayout>

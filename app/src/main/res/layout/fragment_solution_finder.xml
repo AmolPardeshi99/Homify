@@ -160,7 +160,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginBottom="70dp"
-                    android:backgroundTint="@color/supporting_colour1"
+                    android:backgroundTint="@color/secondary_colour"
                     android:text="make a call" />
 
             </RelativeLayout>
@@ -227,7 +227,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginEnd="70dp"
                     android:layout_marginBottom="70dp"
-                    android:backgroundTint="@color/supporting_colour1"
+                    android:backgroundTint="@color/secondary_colour"
                     android:text="make a call" />
 
             </RelativeLayout>

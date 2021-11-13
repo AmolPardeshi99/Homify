@@ -35,11 +35,9 @@
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_intro_frag_two.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_job_detail_page.xml" value="0.264" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_language.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_money.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_ongoing.xml" value="0.264" />
-        <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_physical_training.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_money.xml" value="0.1" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_ongoing.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_physical_training.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_redirect.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/layout/fragment_test_result.xml" value="0.1" />
@@ -75,6 +73,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/bottomsheet_otp.xml" value="0.264" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/bottomsheet_register.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/dialog_accept_job.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_all.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_details.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_home.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_intro_frag_one.xml" value="0.2526041666666667" />
@@ -83,12 +82,28 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_job_description.xml" value="0.264" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_job_detail_page.xml" value="0.2484375" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_language.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_money.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_ongoing.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_physical_training.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_redirect.xml" value="0.2484375" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_register.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_solution_finder.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_test_result.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_today.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_tommorow.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_training.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_training_quiz.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_training_tab_layout.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_video_playing.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_virtual_training.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/fragment_week.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/header_layout.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/itemlayout_ongoing.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/itemlayout_quiz.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/lang_dialog.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/newwork_item_layout.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/selected_dot.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/trainingvideo_itemlayout.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/menu/bottom_menu.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/menu/nav_menu.xml" value="0.21486486486486486" />
       </map>

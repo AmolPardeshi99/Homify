@@ -23,7 +23,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="35dp"
                 android:text="Register"
-                android:textColor="@color/secondary_colour"
+                android:textColor="@color/yellowClour"
                 android:textSize="24sp" />
 
             <TextView
@@ -70,7 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginTop="132dp"
-                        android:backgroundTint="@color/supporting_colour1"
+                        android:backgroundTint="@color/secondary_colour"
                         android:paddingVertical="10dp"
                         android:text="verify otp"
                         app:cornerRadius="6dp"

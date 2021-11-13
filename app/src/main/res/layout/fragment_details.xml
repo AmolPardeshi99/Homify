@@ -15,7 +15,7 @@
             android:text="Enter Details"
             android:layout_gravity="center"
             android:textSize="24sp"
-            android:textColor="@color/secondary_colour"
+            android:textColor="@color/yellowClour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -70,7 +70,7 @@
                 app:cornerRadius="6dp"
                 android:id="@+id/nextToHome"
                 android:text="Next"
-                android:backgroundTint="@color/supporting_colour1"
+                android:backgroundTint="@color/secondary_colour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
