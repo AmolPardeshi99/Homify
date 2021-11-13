@@ -1,5 +1,6 @@
 package dev.dominators.homify.ui.training
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.utils.ColorTemplate
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentTestResultBinding
+import dev.dominators.homify.ui.homepage.HomeActivity
 import java.lang.Exception
 import java.util.ArrayList
 
@@ -27,6 +29,10 @@ class TestResultFragment : Fragment() {
     ): View? {
         fragmentTestResultBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_test_result,container,false)
 
+        fragmentTestResultBinding.finishTest.setOnClickListener {
+            val intent = Intent(requireContext(),HomeActivity::class.java)
+            startActivity(intent)
+        }
         return return fragmentTestResultBinding.root
     }
 

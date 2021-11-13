@@ -77,7 +77,21 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finishTest"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/secondary_colour"
+        android:text="finish"
+        app:cornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
 
     </LinearLayout>
 </layout>

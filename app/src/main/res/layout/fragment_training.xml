@@ -80,6 +80,7 @@
             app:strokeWidth="1dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/onPresentJob"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingVertical="10dp">
@@ -138,6 +139,7 @@
             app:strokeWidth="1dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/learnNewJob"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingVertical="10dp">

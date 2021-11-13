@@ -2,16 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/training_nav"
-    app:startDestination="@id/trainingFragment">
+    app:startDestination="@id/trainingTabLayout">
 
-    <fragment
-        android:id="@+id/trainingFragment"
-        android:name="dev.dominators.homify.ui.homepage.TrainingFragment"
-        android:label="TrainingFragment" >
-        <action
-            android:id="@+id/action_trainingFragment_to_trainingTabLayout"
-            app:destination="@id/trainingTabLayout" />
-    </fragment>
     <fragment
         android:id="@+id/trainingTabLayout"
         android:name="dev.dominators.homify.ui.training.TrainingTabLayout"
