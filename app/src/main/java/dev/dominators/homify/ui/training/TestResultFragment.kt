@@ -1,5 +1,6 @@
 package dev.dominators.homify.ui.training
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -14,6 +15,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.utils.ColorTemplate
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentTestResultBinding
+import dev.dominators.homify.ui.homepage.HomeActivity
 import java.lang.Exception
 import java.util.ArrayList
 
@@ -27,14 +29,17 @@ class TestResultFragment : Fragment() {
     ): View? {
         fragmentTestResultBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_test_result,container,false)
 
-         return fragmentTestResultBinding.root
+        fragmentTestResultBinding.finishTest.setOnClickListener {
+            val intent = Intent(requireContext(),HomeActivity::class.java)
+            startActivity(intent)
+        }
+        return return fragmentTestResultBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val list = arrayListOf<PieEntry>()
-
         addDatatoList(list)
         val pieDataSet = PieDataSet(list,"Test Result")
         pieDataSet.colors = ColorTemplate.JOYFUL_COLORS.asList()
