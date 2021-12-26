@@ -38,9 +38,23 @@ class TodayFragment : Fragment() {
 
     fun builData(){
         for(i in 0..20){
-            var address = "jay mata di mandir, santosh bhuvan, valai pada road"
-            val job = Jobs(address,"8237578373","10 jun","13 nov","abhimanyu","10:00 AM","job","1")
-            list.add(job)
+
+
+            var address3 = "valai pada road, santosh bhuvan, valai pada road"
+            val job3 = Jobs(address3,"987578373","10 jun","13 nov","amol","10:00 AM","job","1")
+            list.add(job3)
+
+            var address4 = "jay mata di mandir, santosh bhuvan, valai pada road"
+            val job4 = Jobs(address4,"67647578373","10 jun","13 nov","mausam","10:00 AM","job","1")
+            list.add(job4)
+
+            var address1 = "nsp nagar, santosh bhuvan, valai pada road"
+            val job1 = Jobs(address1,"8237578373","10 jun","13 nov","abhimanyu","10:00 AM","job","1")
+            list.add(job1)
+
+            var address2 = "vasai mahanagar palika, santosh bhuvan, valai pada road"
+            val job2 = Jobs(address2,"4657578373","10 jun","13 nov","deepak","10:00 AM","job","1")
+            list.add(job2)
         }
     }
 

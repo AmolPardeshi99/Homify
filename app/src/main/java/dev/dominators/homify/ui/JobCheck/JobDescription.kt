@@ -1,6 +1,7 @@
 package dev.dominators.homify.ui.JobCheck
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import dev.dominators.homify.R
 import dev.dominators.homify.databinding.DialogAcceptJobBinding
 import dev.dominators.homify.databinding.FragmentJobDescriptionBinding
 import dev.dominators.homify.datamodel.Jobs
+import dev.dominators.homify.ui.homepage.HomeActivity
 
 class JobDescription : Fragment(R.layout.fragment_job_description) {
 
@@ -28,6 +30,11 @@ class JobDescription : Fragment(R.layout.fragment_job_description) {
             tvJDDate.text = jobs.date
             tvJDName.text = jobs.name
             timeJobDesc.text = jobs.time
+
+            descHome.setOnClickListener {
+                val intent = Intent(requireContext(), HomeActivity::class.java)
+                startActivity(intent)
+            }
         }
         binding.acceptJob.setOnClickListener {
             val dialog = Dialog(requireContext())

@@ -10,6 +10,7 @@ import androidx.navigation.Navigation
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentJobDetailPageBinding
 import dev.dominators.homify.datamodel.Jobs
+import dev.dominators.homify.ui.homepage.HomeActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -44,6 +45,9 @@ class JobDetailPage : Fragment(R.layout.fragment_job_detail_page) {
             }
 
         }
+        binding.detailHome.setOnClickListener {
+            val intent = Intent(requireContext(), HomeActivity::class.java)
+            startActivity(intent) }
 
     }
 }

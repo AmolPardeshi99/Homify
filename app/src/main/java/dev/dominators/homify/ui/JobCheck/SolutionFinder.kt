@@ -1,6 +1,8 @@
 package dev.dominators.homify.ui.JobCheck
 
+import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import dev.dominators.homify.R
 import dev.dominators.homify.databinding.FragmentSolutionFinderBinding
+import dev.dominators.homify.ui.homepage.HomeActivity
 
 class SolutionFinder : Fragment(R.layout.fragment_solution_finder) {
 
@@ -54,6 +57,22 @@ class SolutionFinder : Fragment(R.layout.fragment_solution_finder) {
                 }
             }
 
+            custCall.setOnClickListener {
+                val intent = Intent(Intent.ACTION_CALL)
+                intent.setData(Uri.parse("tel:"+9764119103))
+                startActivity(intent)
+            }
+
+            coworkerCall.setOnClickListener {
+                val intent = Intent(Intent.ACTION_CALL)
+                intent.setData(Uri.parse("tel:"+9764119103))
+                startActivity(intent)
+            }
+
+            solHome.setOnClickListener {
+                val intent = Intent(requireContext(),HomeActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

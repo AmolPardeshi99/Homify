@@ -119,7 +119,6 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
                 if (code != null) {
                     verifyCode(code)
                 }
-                Toast.makeText(requireContext(),"code sent",Toast.LENGTH_SHORT)
             }
 
             override fun onVerificationFailed(p0: FirebaseException) {
@@ -144,7 +143,6 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
         auth.signInWithCredential(credential)
             .addOnCompleteListener(OnCompleteListener<AuthResult>() {
                 if (it.isSuccessful) {
-                    Toast.makeText(activity?.applicationContext, "Otp verification Successful", Toast.LENGTH_LONG).show()
 
                     auth.currentUser?.let { it1 ->
                         //addUserDetailsToDatabase(it1.uid)
@@ -153,7 +151,6 @@ class RegisterFrag : Fragment(R.layout.fragment_register) {
 //                    startActivity(intent)
 
                 } else {
-                    Toast.makeText(activity?.applicationContext, "FAIL", Toast.LENGTH_LONG).show()
                 }
             })
 

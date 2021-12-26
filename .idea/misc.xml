@@ -56,9 +56,11 @@
         <entry key="..\:/Users/Asus/My Android Projects/Homify/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/colour1_bg.xml" value="0.26458333333333334" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/default_dot.xml" value="0.12407407407407407" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/home_back.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/ic_baseline_call.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/ic_baseline_cancel.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/ic_baseline_location.xml" value="0.22882882882882882" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/ic_home_logo.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/ic_red_cancel.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/rectangle.xml" value="0.22882882882882882" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/drawable/regular_bg.xml" value="0.26458333333333334" />
@@ -69,7 +71,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_login.xml" value="0.12284701114488349" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_otpactivity.xml" value="0.2375" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_splash_screen.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_splash_screen.xml" value="0.176" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/activity_training_process.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/bottomsheet_otp.xml" value="0.264" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/bottomsheet_register.xml" value="0.2" />
@@ -107,6 +109,7 @@
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/layout/trainingvideo_itemlayout.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/menu/bottom_menu.xml" value="0.21486486486486486" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/menu/nav_menu.xml" value="0.21486486486486486" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Homify/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22882882882882882" />
       </map>
     </option>
   </component>

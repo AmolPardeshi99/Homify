@@ -44,7 +44,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:background="#0000ffff"
-                        android:src="@drawable/ic_question_icon" />
+                        android:id="@+id/descHome"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/home_back" />
 
 
                 </RelativeLayout>

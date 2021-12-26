@@ -14,6 +14,10 @@ import dev.dominators.homify.ui.homepage.HomeActivity
 import android.net.Uri
 import android.view.WindowManager
 import dev.dominators.homify.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -23,26 +27,17 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestWindowFeature(1)
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-        )
-        window.statusBarColor = Color.BLACK
+
 
         dataBinding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(dataBinding.root)
         auth = Firebase.auth
 
-        var videoView = dataBinding.videoView
 
-        videoView.setMediaController(MediaController(this))
 
-        val path: Uri = Uri.parse("android:resource://dev.dominators.homify/"+ R.raw.splash_screen)
-        videoView.setVideoURI(path)
 
-        videoView.setOnPreparedListener { mp -> mp.start() }
-        videoView.setOnCompletionListener {
+        CoroutineScope(Dispatchers.Main).async {
+            delay(3000)
             if (auth.currentUser != null) {
                 Intent()
                 val intent = Intent(this@SplashScreenActivity, HomeActivity::class.java)
@@ -51,8 +46,9 @@ class SplashScreenActivity : AppCompatActivity() {
                 val intent = Intent(this@SplashScreenActivity, IntroActivity::class.java)
                 startActivity(intent)
             }
-        }
 
+            finish()
+        }
 
 
     }
